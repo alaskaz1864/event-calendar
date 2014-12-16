@@ -1,0 +1,146 @@
+.table-bordered-custom {
+border: 3px solid #14598F;
+}
+.table-bordered-custom > thead > tr > th,
+.table-bordered-custom > tbody > tr > th,
+.table-bordered-custom > tfoot > tr > th,
+.table-bordered-custom > thead > tr > td,
+.table-bordered-custom > tbody > tr > td,
+.table-bordered-custom > tfoot > tr > td {
+border: 3px solid #14598F;
+color:#ffffff;
+}
+tr{
+position:relative;
+}
+.eventCalendar tr td h6 {
+font-size: 14px;
+float: left;
+color: gray;
+margin: 0;
+padding: 0;
+}
+.eventCalendar tr td h4 {
+font-size: 14px;
+float: right;
+color: gray;
+margin: 0;
+padding: 0;
+margin-top: 85px;
+}
+h5 {
+font-size: 9px;
+color: #003399;
+text-decoration: none;
+text-align: left;
+padding:0;
+list-style-type: circle;
+margin-top: 2px;
+margin-right: 0;
+margin-bottom: 3px;
+margin-left: 5px
+}
+.eventCalendar tr td {
+max-height: 82px;
+width: 14%;
+/*min-width: 14%;*/
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+cursor: pointer;
+}
+div.table-cell {
+max-height: 65px;
+overflow: auto;
+}
+.current-date {
+background: #54A8F0;
+}
+.over-date{
+background: #D8E4BC;
+}
+.holiday-date{
+
+color: #FFFFFF;
+}
+.event-bar{
+padding: 4px 8px;
+        box-sizing: border-box;
+        font-size: 11px;
+        width: 100%;
+        display: block;
+        line-height: 1;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: baseline;
+        border-radius: 3px;
+        margin-top: 5px;
+        /*cursor: pointer;*/
+        background-color: #d9534f;
+}
+.event{
+padding: 5px;
+/*box-sizing: border-box;*/
+/*font-size: 11px;*/
+width: 5%;
+display: block;
+line-height: 1;
+color: #ffffff;
+text-align: center;
+background-color: #d9534f;
+/*border-radius: 3px;*/
+margin-top: 5px;
+}
+.event-inf{
+background-color: #52737B;
+float: left;
+margin-right: 10px;
+}
+.event-on{
+background-color: #53A93F;
+float: left;
+margin-right: 10px;
+}
+.event-holiday{
+background-color: #FF001F;
+float: left;
+margin-right: 10px;
+}
+.paddingoff {
+margin: 0;
+padding: 0;
+}
+.calendar-navigation {
+margin-bottom: 20px;
+background: red;
+}
+.month {
+font-size: 18px;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.month{
+color: #FFFFFF;
+font-size: 20px;
+padding: 4px;
+}
+.overflow-calendar {
+overflow: auto;
+}
+.btn{
+border-radius: 10px;
+}
+thead{
+background: #2CA3E8;
+}
+.display-month{
+background: #14598F;
+}
+
+.table-bordered {
+border: 1px solid #dddddd;
+}
+.holiday{
+color: red;
+}

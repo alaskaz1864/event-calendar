@@ -1,0 +1,35 @@
+/*padding and margins*/
+.reset-all {
+  margin: 0;
+  padding: 0;
+}
+.reset-left {
+  margin-left: 0;
+  padding-left: 0;
+}
+.reset-right {
+  margin-right: 0;
+  padding-right: 0;
+}
+.reset-both {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+.clear {
+  clear: both;
+}
+.margin-right-20 {
+  margin-right: 20px;
+}
+.margin-top-15 {
+  margin-top: 15px;
+}
+.padding-top-10 {
+  padding-top: 10px;
+}
+.margin-top-75 {
+  margin-top: 75px;
+}
+/*end padding and margins*/

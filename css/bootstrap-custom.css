@@ -1,0 +1,113 @@
+/* Bootstrap Customization */
+body, span, p, h1, h2, h3, h4, h5, a, ul, li, input {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  height: auto;
+  max-width: 100%;
+}
+
+/*form*/
+.form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0;
+}
+.form-name {
+  color: #467297;
+}
+textarea {
+  resize: none;
+}
+/*end form*/
+
+/* Tooltab */
+.tooltab {
+  background-color: #14598F;
+  font-size: 18px;
+  /*color: #CCC;*/
+  padding: 6px;
+}
+.tooltab button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.tooltab a:link {
+  color: #FFFFFF;
+}
+.tooltab a:active {
+  color: #FFFFFF;
+}
+.tooltab a:visited {
+  color: #FFFFFF;
+}
+.tooltab a:hover {
+  color: #000000;
+}
+.tooltab span {
+  margin-left: 5px;
+}
+.tool-disabled {
+  color: #95d195;
+  cursor: not-allowed;
+}
+
+/* End Tooltab */
+
+/*Tables*/
+
+/*End Tables*/
+
+/*BreadCrumbs*/
+.breadcrumb {
+  padding: 2px 15px 4px 15px;
+  background-color: #2CA3E8;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.breadcrumb > li + li:before {
+  /*padding: 0 5px;*/
+  color: #CCCCCC;
+  content: '\203a'; /* to display ">" as divider */
+  font-size: 20px;
+}
+.breadcrumb li.active a {
+  text-decoration: none;
+  color: #999999;
+}
+
+/*End BreadCrumbs*/
+
+/*tooltip*/
+.tooltip-inner {
+  background-color: #14598F;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #14598F;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #14598F;
+}
+/*end tooltip*/
+
+/*panel*/
+.panel {
+  background: #F1F8FA;
+  padding: 0 0;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+/*end panel*/
+
+/*Buttoms*/
+
+/*End Buttons*/

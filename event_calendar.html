@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+  <title>Event Calendar</title>
+  <!-- Calling bootstrap design framework -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Calling custom designs -->
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="css/form-style.css" /> -->
+  <link rel="stylesheet" href="css/form-styles.css" />
+  <link rel="stylesheet" href="css/bootstrap-custom.css" />
+  <link rel="stylesheet" href="css/erp-custom.css" />
+  <!-- custom styles for calendar -->
+  <link rel="stylesheet" href="css/calendar-style.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form role="form">
+      <!-- Start of toolbar Note that alhough toolbar icons are not shown in mozilla when forms are opned individually, icons are dsplayed in dialog box. -->
+      <div class="tooltab navbar-fixed-top">
+        <button type="submit">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Save" ><span class="glyphicon glyphicon-floppy-disk" > </span></a>
+        </button>
+        <button type="submit">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Submit" ><span class="glyphicon glyphicon-ok-circle"> </span></a>
+        </button>
+        <button type="submit">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete" ><span class="glyphicon glyphicon-trash"> </span></a>
+        </button>
+        <button type="submit">
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Reset" ><span class="glyphicon glyphicon-refresh"> </span></a>
+        </button>
+      </div>
+      <!-- End of toolbar -->
+      <br />
+      <br />
+      <br />
+      <!-- br tags is used where padding and margins did not work properly -->
+      <!-- Breadcrum top nav -->
+      <div class="col-sm-12">
+        <ol class="breadcrumb">
+          <li>
+            <span class="glyphicon glyphicon-calendar"></span> Event Calendar
+          </li>
+          <li></li>
+        </ol>
+      </div>
+      <!-- End of Breadcrum top nav -->
+      <!-- Start of form with Bootstrap 12 column small grid system -->
+      <div class="col-sm-12">
+        <!-- Start of 9 column left section -->
+        <div class="panel panel-info">
+          <div class="panel-heading ">
+            <h4><i class="fa fa-calendar"> </i> Calendar</h4>
+          </div>
+          <div class="panel-body">
+            <div class="col-sm-12 reset-all">
+              <div class="col-sm-9 reset-all">
+                <div class="col-sm-12 reset-all">
+                  <div class="col-sm-4 reset-all">
+                    <span class="event event-holiday"></span>
+                  </div>
+                  <div class="col-sm-4 reset-all">
+                    <span class="event event-inf"> </span>
+                  </div>
+                  <div class="col-sm-4 reset-all">
+                    <span class="event event-on"> </span>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <br />
+                <div class="col-sm-12 reset-all">
+                  <div class="col-sm-6"></div>
+                  <div class="col-sm-6 reset-all">
+                    <div class="btn-group pull-right" role="group">
+                      <button type="button" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <button type="button" class="btn btn-primary margin-right-20 pull-right">
+                      Today
+                    </button>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <br>
+
+                <table class="table eventCalendar">
+                  <caption class="display-month">
+                    <span class="month pull-left">Mangsir 2071</span>
+                    <span class="month pull-right">Jan/Feb 2014</span>
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Sunday</th>
+                      <th>Monday</th>
+                      <th>Tuesday</th>
+                      <th>Wednesday</th>
+                      <th>Thrusday</th>
+                      <th>Friday</th>
+                      <th>Saturday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="firstrow">
+                      <td class="over-date"><span class="date-top">1</span><span class="date-bottom">11</span></td>
+                      <td class="over-date"><span class="date-top">2</span><span class="date-bottom">12</span></td>
+                      <td class="over-date"><span class="date-top">3</span><span class="date-bottom">13</span></td>
+                      <td class="width"><span class="date-top">4</span>
+                        <!-- apply if else condition here --><!-- if event more then three display notification -->
+                       <span class="notification">+1</span><!-- end if else condition -->
+                        <span class="event-bar event-bar-green">Long Range</span>
+                        <span class="event-bar event-bar-blue">Long Range</span>
+                        <span class="event-bar event-bar-yellow">Long Range</span>
+                        <span class="event-bar event-bar-red">Long Range</span><span class="date-bottom">14</span></td>
+                      <td>
+                        <span class="date-top">5</span>
+                        <!-- <span class="event-bar event-bar-red">Long Range</span> -->
+                        <span class="date-bottom">15</span>                
+                      </td>
+                      <td><span class="date-top">6</span><span class="date-bottom">16</span></td>
+                      <td><span class="date-top">7</span><span class="date-bottom">17</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="date-top">1</span><span class="date-bottom">11</span></td>
+                      <td><span class="date-top">2</span><span class="date-bottom">12</span></td>
+                      <td><span class="date-top">3</span><span class="date-bottom">13</span></td>
+                      <td><span class="date-top">4</span><span class="date-bottom">14</span></td>
+                      <td class="current-date"><span class="date-top">5</span><span class="date-bottom">15</span></td>
+                      <td><span class="date-top">6</span><span class="date-bottom">16</span></td>
+                      <td><span class="date-top">7</span><span class="date-bottom">17</span></td>
+                    </tr>
+                    <tr>
+                      <td class="holiday-date"><span class="date-top">1</span><span class="date-bottom">11</span></td>
+                      <td><span class="date-top">2</span><span class="date-bottom">12</span></td>
+                      <td><span class="date-top">3</span><span class="date-bottom">13</span></td>
+                      <td><span class="date-top">4</span><span class="date-bottom">14</span></td>
+                      <td><span class="date-top">5</span><span class="date-bottom">15</span></td>
+                      <td><span class="date-top">6</span><span class="date-bottom">16</span></td>
+                      <td><span class="date-top">7</span><span class="date-bottom">17</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="date-top">1</span><span class="date-bottom">11</span></td>
+                      <td><span class="date-top">2</span><span class="date-bottom">12</span></td>
+                      <td><span class="date-top">3</span><span class="date-bottom">13</span></td>
+                      <td><span class="date-top">4</span><span class="date-bottom">14</span></td>
+                      <td><span class="date-top">5</span><span class="date-bottom">15</span></td>
+                      <td><span class="date-top">6</span><span class="date-bottom">16</span></td>
+                      <td><span class="date-top">7</span><span class="date-bottom">17</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="date-top">1</span><span class="date-bottom">11</span></td>
+                      <td><span class="date-top">2</span><span class="date-bottom">12</span></td>
+                      <td><span class="date-top">3</span><span class="date-bottom">13</span></td>
+                      <td><span class="date-top">4</span><span class="date-bottom">14</span></td>
+                      <td class="holiday-date"><span class="date-top">5</span><span class="date-bottom">15</span></td>
+                      <td class="over-date"><span class="date-top">6</span><span class="date-bottom">16</span></td>
+                      <td class="over-date"><span class="date-top">7</span><span class="date-bottom">17</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="col-sm-3 margin-top-75">
+                <div class="panel panel-info">
+                  <div class="panel-heading" id="headingTwo">
+                    <h5 class="panel-title form-name"> Todays Events <a data-toggle="collapse" href="#collapseTwo"> <span role= "panel-collapse" class="glyphicon glyphicon-chevron-down pull-right"></span> </a></h5>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse in">
+                    <table class="table table-condensed table-bordered reset-all">
+                      <tr>
+                        <td><span class="event event-inf"> </span></td>
+                        <td>Event Name</td>
+                      </tr>
+                      <tr>
+                        <td><span class="event event-on"> </span></td>
+                        <td>Event Name</td>
+                      </tr>
+                      <tr>
+                        <td><span class="event event-holiday"> </span></td>
+                        <td>Event Name</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel panel-info">
+                  <div class="panel-heading" id="headingThree">
+                    <h5 class="panel-title form-name"> Event Name <a data-toggle="collapse" href="#collapseThree"> <span role= "panel-collapse" class="glyphicon glyphicon-chevron-down pull-right"></span> </a></h5>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse in">
+                    <table class="table table-condensed table-bordered reset-all">
+                      <tr>
+                        <td>Start Date</td>
+                        <td>Date</td>
+                      </tr>
+                      <tr>
+                        <td>End Date</td>
+                        <td>Date</td>
+                      </tr>
+                      <tr>
+                        <td>Duration</td>
+                        <td>??</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel panel-info">
+                  <div class="panel-heading" id="heading4">
+                    <h5 class="panel-title form-name"> Upcoming Events <a data-toggle="collapse" href="#collapse4"> <span role= "panel-collapse" class="glyphicon glyphicon-chevron-down pull-right"></span> </a></h5>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse in">
+                    <table class="table table-condensed table-bordered reset-all">
+                      <tr>
+                        <td>Event Name</td>
+                        <td>Date</td>
+                      </tr>
+                      <tr>
+                        <td>Event Name</td>
+                        <td>Date</td>
+                      </tr>
+                      <tr>
+                        <td>Event Name</td>
+                        <td>Date</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel panel-info">
+                  <div class="panel-heading" id="heading5">
+                    <h5 class="panel-title form-name"> Important Events <a data-toggle="collapse" href="#collapse5"> <span role= "panel-collapse" class="glyphicon glyphicon-chevron-down pull-right"></span> </a></h5>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse in">
+                    <table class="table table-condensed table-bordered reset-all">
+                      <tr>
+                        <td>Event Name</td>
+                        <td>Date</td>
+                      </tr>
+                      <tr>
+                        <td>Event Name</td>
+                        <td>Date</td>
+                      </tr>
+                      <tr>
+                        <td>Event Name</td>
+                        <td>Date</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of 9 column left section -->
+        <!-- Start of 3 column right filter section -->
+      </div>
+      <!-- End of form -->
+    </form>
+  </div>
+  <script src="js/custom.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      $('.eventCalendar > tbody > tr.firstrow > td').css('height','150px');
+   //   $('.event-bar-red').css('width','200%');
+    var date = new Date();
+      var d = date.getDate();
+      var m = date.getMonth();
+      var y = date.getFullYear();
+      // alert(d + '-' + m + '-' + y);
+    });
+    $(document).on('click','.event-bar-red',function(){
+        $(this).css('width','1100%');
+    });
+    $(document).on('click', '.eventCalendar tr td', function() {
+      $('#eventInfo tr td').remove();
+      $(this).find('p').each(function() {
+        var name = $(this).attr('eventname');
+        var startdate = $(this).attr('startdate');
+        var enddate = $(this).attr('enddate');
+        var duration = $(this).attr('duration');
+        $('#eventInfo tbody').append('<tr><td>' + name + '</td><td>' + startdate + '</td><td>' + enddate + '</td><td>' + duration + '</td></tr>');
+      });
+    });
+  </script>
+</body>
+</html>

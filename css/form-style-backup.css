@@ -1,0 +1,787 @@
+/* CSS Document */
+body, span, p, h1, h2, h3, h4, h5, a, ul, li, input {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+}
+a {
+	text-decoration: none;
+}
+
+.table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+
+	vertical-align: middle !important;
+}
+.table thead > tr > td > .form-group, .table tbody > tr > td > .form-group, .table tfoot > tr > td > .form-group {
+
+	margin-bottom: 0px;
+}
+
+.scroll thead {
+	display: block;
+}
+.scroll thead tr th {
+	width: auto;
+}
+.scroll tbody {
+	display: block;
+	overflow: auto;
+	max-height: 200px;
+}
+.scroll tbody tr td {
+	width: auto;
+}
+
+.table-scroll {
+	max-height: 200px;
+	overflow: auto;
+}
+
+textarea {
+	resize: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	height: auto;
+}
+
+
+.top-margin {
+	margin-top: 15px;
+}
+.top-padding {
+	padding-top: 10px;
+}
+.number-type {
+	width: 10%;
+}
+.y-overflow-div {
+	max-height: 100px;/* to define fixed height to sho y axis over flow */
+	overflow-y: auto;
+}
+
+/* right side option or dragand drop section pannel color */
+
+.form-name {
+	color: #467297;
+}
+
+.tbody {
+	overflow-y: auto;
+	max-height: 400;
+}/* to create fixed heading */
+
+.errorMessage li {
+	list-style: none;
+}/* removes list style of error message from server-side */
+.actionMessage li {
+	list-style: none;
+}
+
+
+/*************************************************Bootstrap CSS Components*******************************************/
+.tooltab {
+	background-color: #14598F;
+	font-size: 18px;
+	/*color: #CCC;*/
+	padding: 6px;
+}
+.tooltab button {
+	background: none;
+	border: none;
+	padding: 0px;
+}
+.tooltab a:link {
+	color: #FFFFFF;
+}
+.tooltab a:active {
+	color: #FFFFFF;
+}
+.tooltab a:visited {
+	color: #FFFFFF;
+}
+.tooltab a:hover {
+	color: #000000;
+}
+.tooltab span {
+	margin-left: 5px;
+}
+.tool-disabled {
+	color: #95d195;
+	cursor: not-allowed;
+}
+/* Breadcrumb navigation */
+
+.breadcrumb {
+	padding: 2px 15px 4px 15px;
+	background-color: #2CA3E8;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.breadcrumb > li + li:before {
+	padding: 0px 5px;
+	color: #CCCCCC;
+	content: '\203a'; /* to display ">" as divider */
+	font-size: 20px;
+}
+.breadcrumb li.active a {
+	text-decoration: none;
+	color: #999999;
+}
+
+.panel {
+	background: #F1F8FA;
+	padding: 0px 0px;
+	margin: 0px 0px 20px 0px;
+	width: 100%;
+}
+
+
+
+.form-horizontal .form-group {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/*************************************************Bootstrap CSS Components*******************************************/
+
+
+/*************************************************Common Functions***************************************************/
+.resetspc {
+	margin: 0;
+	padding: 0px;
+}
+.reset-left {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.reset-right {
+	margin-right: 0;
+	padding-right: 0;
+}
+.reset-both {
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 0;
+	padding-right: 0;
+}
+.clear {
+	clear: both;
+}
+
+/*************************************************Common Functions***************************************************/
+
+/*************************************************Custom CSS Buttons*************************************************/
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background: -moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color: #007dc1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 15px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #154682;
+}
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color: #0061a7;
+}
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+/*************************************************Custom CSS Buttons*************************************************/
+
+
+/****styling for input with error******/
+
+#submit-icon:disabled > a > .glyphicon {
+	color: #95d195;
+	cursor: not-allowed;
+}
+/* Gives margin wehere col-sm-12 padding doesnot work (setup_rtemodule_assessment_detail.html) */
+
+.table-fix {
+	min-width: 600px;
+}
+
+
+
+.min-width {
+	width: 10%;
+}/* defining minimum width for table columns eg SNo, Total Marks */
+/******************* Lead forms design custom classes *****************/
+
+/* Top tool bar */
+.max-width {
+	width: 75%;
+}/*for giving max width to the table of eg. remarks
+ */
+
+
+/* Form View mode */
+.view {
+	padding: 6px 20px 0px 0px;
+	font-size: 15px;
+}
+/* Lower buttons tab */
+.button-tab #generate {
+	outline: 0;
+}
+.button-tab button {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+/* custom styles */
+
+.form h3 {
+	font-size: 22px;
+	line-height: 40px;
+}
+.form h5 {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bold;
+}/* used as label for checkbox and radio */
+.upload {
+	margin-bottom: 10px;
+}/* browse button of setup lead master data */
+.file-upload {
+	padding: 0px 0px 10px 0px;
+}/* browse button of transaction_lead_documentation.html to format and push remarks div to next line*/
+.addBtn {
+	margin-top: 20px;
+}/* Add another file button of transaction_lead_documentation.html */
+.communication table {
+	width: 99%;
+}
+.tableDivision {
+	padding: 0px 10px;
+}
+/* accordian styling */
+
+#accordion h3 {
+	outline-color: #090;
+}
+#accordion .ui-accordion-content > * {
+	margin: 0;
+	padding: 10px;
+	background-color: #dff0d8;
+}
+.accordion .btn {
+	border-radius: 0px !important;
+	outline: 0;
+}
+.accordion {
+	margin-bottom: 15px;
+}
+.code-box {
+	display: none;
+	padding: 10px;
+	background-color: #dff0d8;
+}
+.display-true {
+	display: inherit;
+}
+@media (max-width: 830px) {
+	.media-responsive {
+		width: 100%;
+	}
+}/* transaction_recruitment_manager.html to control overlaping of accordion and table */
+.margin-bottom-10{
+	margin-bottom: 10px;
+}
+
+/* Form validation styling */
+.err-msg {
+	padding: 5px;
+}
+/* custom tab view styling */
+
+.margin-set {
+	padding-bottom: 20px;
+}/* setup_rte_module.html, setup_rte_module_mapping.html to create padding top of next and prev buttons*/
+/* master data */
+
+.ui-tabs-panel h4 {
+	text-align: center;
+	line-height: 15px;
+}
+/* tab navigation styling */
+
+.container {
+	max-width: 100%;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: #dff0d8;
+	outline: 0;
+}
+.tabs-top-margin {
+	margin-top: 10px;
+}
+/******************* RTE forms design custom classes *****************/
+/* setup_rte_module.html */
+
+.module {
+	background-color: #dff0d8;
+	padding: 20px 20px 10px 20px;
+}
+/* setup_rte_module_faculty.html */
+.y-overflow-div-faculty {
+	max-height: 300px;
+	overflow-y: auto;
+}
+/* setup_rte_module_mapping.html */
+
+.fragment-margin {
+	padding: 20px;
+}
+/* transaction_rte_group_division.html */
+
+.overflow-style {
+	height: 200px;
+	overflow: auto;
+}
+#spacing {
+	margin-bottom: 10px;
+}/*providing margin to the scrollable content so as to improve UX*/
+.group {
+	height: 100px;
+	border: 1px dashed;
+	margin: 10px;
+}
+.hr_margin {
+	padding: 0;
+	margin: 0;
+}
+.right-tbl {
+	height: 200px;
+	overflow-y: auto;
+}
+/* styling dragable content delete area */
+#delete-stages {
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	margin-top: -5px;
+	padding: 8px;
+}
+.label-danger {
+	background-color: white;
+	color: #888888;
+	border: 1px dashed #888888;
+	height: 50px;
+	line-height: 25px;
+}
+/* end of styling dragable content delete area */
+
+.draggable-content {
+	z-index: 1;
+}
+/* transaction_rte_routineSchedule_master.html */
+
+.menu {
+	padding: 5px;
+}
+.menu h4 {
+	padding: 10px;
+	text-align: center;
+	background-color: #dff0d8;
+}
+.menu ul li {
+	background-color: #f5f5f5;
+	list-style: none;
+	text-align: center;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 2px;
+}
+
+.routineConflict {
+	border-left: 10px solid #ed9c28;
+}
+
+@media (max-width: 980px) {
+	.max-width-table {
+		min-width: 900px !important;
+		overflow-x: scroll;
+	}
+}
+/* transaction_rte_seatplan.html */
+.sm-table-col {
+	width: 10%
+}
+/* reset table cell paddings */
+
+.master-schedule {
+	margin-top: 10px;
+}
+
+/************************************* SS forms design custom classes ******************************************/
+
+/* setup_ss_meeting_record.html */
+
+.search-stu {
+	list-style: none;
+}
+/* setup_ss_survey_master.html */
+
+.survey-group, .list-name {
+	border: 1px solid #dff0d8;
+	margin-bottom: 10px;
+}
+.survey-group ul li, .list-name ul li {
+	list-style: none;
+}
+.survey-group > ul {
+	min-height: 50px;
+}
+.survey-group > ul > li {
+	margin: 10px 0px;
+}
+.survey-group input {
+	box-shadow: none;
+}
+.survey-group input:disabled {
+	background-color: white;
+}
+.remove-btn {
+	color: #ffffff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+/* transaction_ss_student_mass_communication.html */
+.table-tamplate {
+	height: 200px;
+	overflow-y: auto;
+}/* table-tamplate designs over flow of nested table */
+.spacingS {
+	margin-bottom: 15px;
+}/*For providing proper spacing to the table so as to improve UX*/
+
+/************************************* SCM forms design custom classes ******************************************/
+
+/*  setup_product_tile.html */
+
+.contact-persons input {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.contact-persons form-control:focus {
+	border-color: black;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* tab navigation styling for setup_scm_supplier.html */
+
+/* setup_scm_requisition.html */
+
+
+.ui-draggable {
+	cursor: move;
+}
+
+/*********** setup_scm_requisition_tracker.html **************/
+
+
+/*styling for input with error*/
+
+#submit-icon:disabled > a > .glyphicon {
+	color: #95d195;
+	cursor: not-allowed;
+}
+
+.table td {
+	vertical-align: middle !important;
+}
+
+/*extra styling for the form*/
+
+.tracker_detail_table {
+	max-height: 160px;
+	overflow: auto;
+}
+
+/********************************* setup_scm_purchase_order.html *********************************/
+#validate-err-msg {
+	position: fixed;
+	top: 35px;
+	width: 100%;
+	z-index: 1;
+	border-radius: 0px;
+	font-weight: bold
+}
+
+
+/* styling for input with error */
+
+.has-error {
+	border-color: #b94a48;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.has-error:focus {
+	border-color: #953b39;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+
+#submit-icon:disabled > a > .glyphicon {
+	color: #95d195;
+	cursor: not-allowed;
+}
+
+.table td {
+	vertical-align: middle !important;
+}
+
+/* extra styling for the form */
+
+.tracker_detail_table {
+	max-height: 160px;
+	overflow: auto;
+}
+
+.nav-tabs > li .close {
+	margin: -3px 0 0 10px;
+	font-size: 18px;
+	padding: 5px 0;
+	float: right;
+	outline: none;
+}
+
+.req-helptext {
+	font-size: 12px;
+}
+
+/********************************* setup_scm_supplier.html *********************************/
+#person-container .panel {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border: none;
+}
+#person-container .nav-tabs li.active a, #person-container .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: none;
+	outline: 0;
+	border: none;
+}
+
+/***************************************** SYSTEM forms design custom classes ***************************************/
+
+/*********************** System Approval ********************/
+
+.filter-option, .stage-option {
+	background: #F5F5F5;
+}
+.hr-filter, .stage {
+	background: white;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+.hr-filter ul, .stage ul {
+	max-height: 138px;
+	overflow-y: auto;
+}
+.hr-filter ul li, .stage ul li {
+	list-style: none;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 5px;
+}
+
+/************************************* mapping_configuration ******************************************/
+
+.process {
+	background: #F5F5F5;
+}
+.process-list {
+	background: white;
+	margin-bottom: 15px;
+	padding: 10px;
+	max-height: 138px;
+	overflow-y: auto;
+}
+
+.stages ul {
+	background: white;
+	margin-bottom: 15px;
+	padding: 10px;
+	max-height: 138px;
+	overflow-y: auto;
+}
+
+.process-list ul li, .stages ul li {
+	list-style: none;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 5px;
+}
+
+/********************** Setup System Document Manager ***************************/
+#validate-err-msg {
+	position: fixed;
+	top: 35px;
+	width: 100%;
+	z-index: 1;
+	border-radius: 0px;
+	font-weight: bold
+}
+
+/****styling for input with error******/
+
+.has-error {
+	border-color: #b94a48;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.has-error:focus {
+	border-color: #953b39;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+
+#submit-icon:disabled > a > .glyphicon {
+	color: #95d195;
+	cursor: not-allowed;
+}
+
+.table td {
+	vertical-align: middle !important;
+}
+
+/******************** extra styling for the form*********************************/
+.req-table {
+	padding-left: 0;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+li {
+	list-style: none;
+}
+.fa_search_result, .prod_search_result {
+	max-height: 100px;
+	overflow: auto;
+	padding: 0px;
+}
+.draggable-content:hover {
+	cursor: move;
+}
+/********************** End of Setup System Document Manager ***************************/
+
+/*********************** System Form Coding Preference ********************/
+/***this styling allows the button to take up only the space needed in the td**/
+.btn-width-auto {
+	white-space: nowrap;
+	width: 1%;
+}
+
+#tbl-module-drop {
+	max-height: 300px;
+	overflow: auto;
+}
+
+#tbl-list {
+	padding: 0px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+#tbl-list li {
+	list-style: none;
+	padding: 10px 15px;
+	border-bottom: 1px solid #dddddd;
+}
+#tbl-list li:last-child {
+	border-bottom: none;
+}
+
+.draggable-content:hover {
+	cursor: move;
+}
+
+/*****this styling allows the button to take up only the space needed in the td****/
+.btn-width-auto {
+	white-space: nowrap;
+	width: 1%;
+}
+
+#tbl-module-drop {
+	max-height: 300px;
+	overflow: auto;
+}
+
+#tbl-list {
+	padding: 0px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+#tbl-list li {
+	list-style: none;
+	padding: 10px 15px;
+	border-bottom: 1px solid #dddddd;
+}
+#tbl-list li:last-child {
+	border-bottom: none;
+}
+
+.draggable-content:hover {
+	cursor: move;
+}
+
+/*********************** end of System Form Coding Preference ********************/
+
+/*********************** Transaction system communication manager *********************/
+ul.unstyled li {
+	list-style: none;
+	margin-left: 15px;
+}
+.communicationTarget {
+	margin-left: 40px;
+}
+.draggable-content:hover {
+	cursor: move;
+}
+.message_template {
+	margin: 0;
+	padding: 0;
+}

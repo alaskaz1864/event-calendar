@@ -1,0 +1,103 @@
+.eventCalendar {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.eventCalendar > thead > tr > th, .eventCalendar > tbody > tr > td {
+  border: 2px solid #14598F;
+  width: 14.285714286%;
+  margin: 0;
+  padding: 0;
+}
+
+.eventCalendar > thead > tr > th {
+  background: #2CA3E8;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+}
+
+.eventCalendar > tbody > tr > td {
+  height: 120px;
+  position: relative;
+}
+.eventCalendar > tbody > tr.firstrow > td {
+
+  position: relative;
+}
+.date-top {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: gray;
+  font-size: 15px;
+}
+.date-bottom {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  color: gray;
+  font-size: 15px;
+}
+.notification {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: #FFFFFF;
+  font-size: 12px;
+  background: #ec971f;
+  border-radius: 3px;
+  padding: 1px 1px;
+}
+.current-date {
+  background: #54A8F0;
+}
+.over-date {
+  background: #D8E4BC;
+}
+.holiday-date {
+  background: #BF0101;
+}
+.display-month {
+  background: #14598F;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.month {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  color: #FFFFFF;
+  padding: 4px;
+}
+.event-bar {
+  padding: 4px 8px;
+  position: absolute;
+  box-sizing: border-box;
+  font-size: 11px;
+  width: 100%;
+  max-width:400%;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.event-bar-red {
+  background-color: #d9534f;
+  top: 25px;
+}
+.event-bar-green {
+  background-color: green;
+  top: 50px;
+}
+.event-bar-blue {
+  background-color: blue;
+  top: 75px;
+}
+.event-bar-yellow {
+  background-color: #ec971f;
+  top: 100px;
+}

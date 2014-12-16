@@ -1,0 +1,474 @@
+/* CSS Document */
+
+/*reset margin and padding for row and container to remove extra space while viewing on smaller screens*/
+
+
+body {
+	background-image: -ms-linear-gradient(top left, #0569FF 0%, #2DEF41 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #0569FF 0%, #2DEF41 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #0569FF 0%, #2DEF41 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #0569FF), color-stop(1, #2DEF41));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #0569FF 0%, #2DEF41 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #0569FF 0%, #2DEF41 100%);
+}
+
+.row {
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	padding: 0px;
+	margin: 0px;
+	max-width: 100% !important;
+}
+
+
+
+#footer {
+	padding: 5px 20px;
+	background-color: white;
+	font-size: 10px;
+	height: 25px;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	border-top: 1px solid #999;
+	z-index:99999;
+}
+
+#tpc-logo {
+	height: 15px;
+	margin-left: 6px;
+}
+
+#logo {
+	height: 20px;
+}
+
+/*navbar styling*/
+
+.navbar {
+	/*background-color: #14598F;*/
+	padding: 15px;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	padding-right: 25px;
+	min-height:50px !important;
+}
+
+.nav {
+	font-size: 12px;
+} /*navbar font size styling*/
+
+.nav-ico {
+	color: white;
+}
+
+/* navbar icons positioning styling*/
+
+.nav .glyphicon {
+	margin-right: 20px;
+}
+
+.navbar .glyphicon {
+	font-size: 16px;
+}/*navbar icon size styling*/
+
+/* vertical divider in navbar*/
+/* adding font size will increase height of the divider respectively but will also increase the height of the navbar*/
+
+.v-divider {
+	margin: 0 9px;
+	border-right: 1px solid #424242;
+}
+
+/*toolbar styling*/
+
+.toolbar {
+	background-color: #fff;
+	/*background-color: #2CA3E8;*/
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top:50px;
+	color:#FFFFFF;
+}
+
+/*toolbar title styling*/
+
+#title h5 {
+	color: #34934b;
+	font-size:16px;
+	font-weight: bold;
+	padding: 7px 0px;
+	margin: 0px auto;
+	margin-bottom: -3px;
+}
+
+/*side menu opening button*/
+
+.menu-trigger {
+	position: relative;
+	padding-left: 60px;
+}
+
+.menu-trigger:before {
+	position: absolute;
+	left: 0;
+	margin-left: 10px;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	box-shadow: 0 4px rgba(0,0,0,0), 0 8px #fff, 0 12px rgba(0,0,0,0), 0 16px #fff;
+	content: '';
+}
+
+/* overall anchor tag styling*/
+
+a {
+	color: #c4c4c4;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+/* following styling is for the main content section where the dialogs will appear and the right widgets i.e. favourites and pending tasks*/
+
+#content {
+	padding: 0px 10px 0px;
+} /*this is to remove padding from the parent class*/
+
+#dialog-area {
+	height: auto;
+	padding: 10px;
+}/*this is the area where the dialog box is to be opened and restricted*/
+
+#widgets {
+	height: auto;
+	padding: 10px;
+	margin-bottom: 18px;
+}/*styling for right side widgets*/
+
+#widgets .row {
+	padding: 0 10px;
+}/*adjust widgets */
+
+.fav {
+	background-color: #222222;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+}/*styling for favourite widgets*/
+
+.fav h5 { /*favorite title styling*/
+	color: white;
+	font-weight: bold;
+}
+
+.fav hr { /*favourite horizontal divider*/
+	margin: 5px 0px;
+	border-color: #565656;
+}
+
+.fav li { /*favorites list styling*/
+	font-size: 12px;
+	text-align: left;
+	margin-left: 0px;
+	color: #c4c4c4;
+	padding-top: 5px;
+	list-style: none;
+	margin-top: 6px;
+}
+
+/*pending-status styling*/
+
+.pending-status {
+	padding-top: 1px;
+	background-color: #222222;
+	min-height: 20vh;
+	height: 45vh;
+	margin-bottom:10px;
+}/*styling for pending-task widgets*/
+
+.pending-status tr,td,th{
+	color: #C4C4C4;
+	font-size:12px;
+}
+
+.pending-status h5 {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.pending-status hr {
+	margin: 5px 0px;
+	border-color: #565656;
+}
+
+/*pending-status table styling*/
+
+
+#table-form {
+	height: 33vh;
+	overflow: auto;
+}
+
+#status-table {
+	font-size: 9px;
+}
+
+#status-table input[type="checkbox"] {
+	margin-top: 0px;
+} /* this is to adjust the checkbox margin in the pending status box*/
+
+/*slide menu position adjusment*/
+
+.cbp-spmenu {
+	margin-top: 50px;
+} /*removing the margin-top will result in the slide menu overlapping the navbar as well*/
+
+/*the following css is for the slide menu listing effect*/
+
+/*slide menu icon adjusments*/	
+
+.c-icon {
+	font-size: 20px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 17px;
+	color: white;
+}
+
+.c-icon-disabled { /*slide menu icon color adjustment for disabled link*/
+	font-size: 20px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 17px;
+	color: #767676;
+}
+
+/*horizontal divider for slide menu*/
+
+hr {
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #1e1e1e;
+	border-width: 1px;
+	margin: 0px;
+	margin-top: -4px;
+}
+
+/*slide menu height adjustment*/
+
+.menu {
+	position: fixed !important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* We remove the margin, padding, and list style of UL and LI components */
+
+#menuwrapper ul, #menuwrapper ul li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 11px;
+}
+
+#sidemenu {
+	background: #272727;
+	width: 180px;
+	z-index: 999999;
+}
+
+/* We apply background color and border bottom white and width to 150px */
+
+#menuwrapper ul li {
+	background-color: #272727;
+	width: 180px;
+}
+
+/* We apply the background hover color when user hover the mouse over of the li component */
+
+#menuwrapper ul li:hover {
+	background-color: #E7E7E7;/*position:relative;*/ 
+}
+
+/* We apply the link style */
+
+#menuwrapper ul li a {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	color: #fff;
+	text-decoration: none;
+	float: left;
+}
+
+#menuwrapper ul li a.disabled {
+	color: #767676;
+}/*disabled anchor tag color change*/
+
+#menuwrapper ul li.disabled ul, #menuwrapper ul li.disabled ul li {
+	visibility: hidden !important;
+}/*disabled class to disabled sub-menu*/
+
+#menuwrapper .disabled:hover {
+	background-color: transparent !important;
+}/*remove background color on hover on disabled menu item*/
+
+/**** SECOND LEVEL MENU ****/
+/* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
+
+#menuwrapper ul li ul {
+	margin-left: 55px;
+	position: absolute;
+	display: block;
+	height: 100%;
+	background-color: transparent;
+	color: #fff;
+	z-index: top;
+	width: 0px;
+	transition: width 0.4s;
+	-moz-transition: width 0.4s;
+	-webkit-transition: width 0.4s;
+	-o-transition: width 0.4s;
+}
+
+/* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
+
+
+#menuwrapper ul li:hover ul {
+	top: 0px;
+	display: block;
+	visibility: visible;
+	background-color: #E7E7E7;
+	width: 185px;
+}/*sub-menu will appear on hovering over items on main menu*/
+
+#menuwrapper ul li ul li {
+	color: #424242;
+	background: transparent;
+	visibility: hidden;
+	width: 0px;
+	font-size: 12px;
+	padding: 13px 10px;
+	transition: width 0.4s;
+	-moz-transition: width 0.4s;
+	-webkit-transition: width 0.4s;
+	-o-transition: width 0.4s;
+} /*sub-menu styling prior hover*/
+
+#menuwrapper ul li ul li:hover {
+	background-color: white;
+}/*sub-menu background*/
+
+#menuwrapper ul li ul a {
+	padding: 0px;
+	text-align: left;
+}/*adjust sub-menu list position*/
+
+#menuwrapper ul li:hover ul li {
+	visibility: visible;
+	width: 185px;
+}
+
+#menuwrapper ul li:hover .c-icon {
+	color: #424242;
+}/*color adjusments to icons on hovering*/
+
+#menuwrapper ul li:hover a {
+	color: #424242;
+}/*color adjustments to links on hovering*/
+
+/*following styling is for third level menu*/
+
+#workflow ul li, #workflow ul {
+	visibility: hidden !important;
+}
+
+#workflow:hover ul li {
+	margin-left: 120px;
+	background-color: #CCC;
+	visibility: visible !important;
+}
+
+/*Dialog Styling */
+
+
+.boundary_panel {
+	height: 80vh;
+	margin-top:10px;
+	z-index:1; 
+
+} /* Setting Dialog Boundary */
+
+#myDockArea {
+	height: inherit;
+	width: 98vw;
+	top:96vh;
+	padding:0;
+	position:fixed;
+	
+}
+
+.myButton {
+	-moz-box-shadow: 3px 4px 0px 0px #3dc21b;
+	-webkit-box-shadow: 3px 4px 0px 0px #3dc21b;
+	box-shadow: 3px 4px 0px 0px #3dc21b;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a));
+	background:-moz-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-webkit-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-o-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:-ms-linear-gradient(top, #44c767 5%, #5cbf2a 100%);
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a',GradientType=0);
+	background-color:#44c767;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767));
+	background:-moz-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-webkit-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-o-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:-ms-linear-gradient(top, #5cbf2a 5%, #44c767 100%);
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767',GradientType=0);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
