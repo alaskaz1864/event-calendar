@@ -275,65 +275,108 @@
       // alert(d + '-' + m + '-' + y);
     });
 
-    var tableWidth = $('.eventCalendar').width();
-    var cellWidth = $('.eventCalendar tr td').width();
-    var dateDiff = 15;    
 
 
-    $(document).on('click','.event-bar-red',function(){
-      // console.log(this);      
-        // $(this).next('td').html('<span class="event-bar event-bar-red">Long Range</span>');
+    $(document).on('click','.event-bar-red',function(){      
         console.log($(this).parents().next('td').html('<span class="event-bar event-bar-red">Long Range</span>'));
     });
+    // var tableWidth = $('.eventCalendar').width();
+    // var cellWidth = $('.eventCalendar tr td').width();
+
+    var dateDiff = 15, day='sunday', 
+        totalWidth=dateDiff*100, 
+        eventBar = $('.event-bar-green');
+
+    if(day = 'sunday'){
+      sunday();   
+      monday();
+    }
+    
+
+
     $(document).on('click','.event-bar-green',function(){             
-      var lastTd = $(this).parents('tr').last();
-      var trIndex = $(this).parents('tr').index();
-      var tdIndex = $(this).parent().index();      
-      var tdWidth = $(this).parent().innerWidth();
-      if (dateDiff==0) {
-        dateDiff = 1;
-      }
-      var totalWidth = dateDiff*tdWidth;      
-      if (totalWidth>tdWidth) {
-        var daysWidth =  (7-tdIndex)*tdWidth;
-        $(this).width(daysWidth);
-        var overflowWidth = totalWidth-daysWidth;
-        dateDiff = overflowWidth/tdWidth;
-        console.log(dateDiff);
-        totalWidth = dateDiff*tdWidth;              
-        if (totalWidth>tdWidth) {            
-            console.log($(this).parents('tr').next().find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>'));
-            console.log(overflowWidth);
-            if (overflowWidth>tdWidth) {
+      // var lastTd = $(this).parents('tr').last();
+      // var trIndex = $(this).parents('tr').index();
+      // var tdIndex = $(this).parent().index();      
+      // var tdWidth = $(this).parent().innerWidth();
+      // if (dateDiff==0) {
+      //   dateDiff = 1;
+      // }
+      // var totalWidth = dateDiff*tdWidth;      
+      // if (totalWidth>tdWidth) {
+      //   var daysWidth =  (7-tdIndex)*tdWidth;
+      //   $(this).width(daysWidth);
+      //   var overflowWidth = totalWidth-daysWidth;
+      //   dateDiff = overflowWidth/tdWidth;
+      //   console.log(dateDiff);
+      //   totalWidth = dateDiff*tdWidth;              
+      //   if (totalWidth>tdWidth) {            
+      //       console.log($(this).parents('tr').next().find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>'));
+      //       console.log(overflowWidth);
+      //       if (overflowWidth>tdWidth) {
 
-              console.log($(this).parents('tr').next().find('td').first().find('.event-bar-green').width(overflowWidth));  
-            }
+      //         console.log($(this).parents('tr').next().find('td').first().find('.event-bar-green').width(overflowWidth));  
+      //       }
             
             
-            // .find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>').width(daysWidth)
-            var overflowWidth = totalWidth-daysWidth;
-            dateDiff = overflowWidth/tdWidth;          
-        };
-      };
+      //       // .find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>').width(daysWidth)
+      //       var overflowWidth = totalWidth-daysWidth;
+      //       dateDiff = overflowWidth/tdWidth;          
+      //   };
+      // };
+      // 
       
-      // function divideIntoRows(trIndex, ){
 
-      // }
 
-      // var remainingWidth = tableWidth - (cellWidth*$(this).parent().index());
-      // $(this).width('1100%');
-      // var currentWidth = $(this).width();
-      // var overflowWidth;
-      // if (currentWidth>remainingWidth) {
-      //   overflowWidth = currentWidth-remainingWidth;
-      //   var nextRowTd = $(this).closest('tr').next('tr').find('td').first();
-        
-      //   console.log(nextRowTd.html('<span class="event-bar event-bar-green">Long Range</span>'));        
-      //   nextRowTd.width(overflowWidth);
-      //   // $(this).closest('tr');
-      // }
+
+      
 
     });
+
+
+  var dayWidth;
+  function sunday(){
+    dayWidth=700;
+    var remainingWidth=totalWidth-dayWidth;    
+    eventBar.innerWidth(dayWidth+'%');
+    if ( remainingWidth > 0 ){
+      eventBar.parents('tr').next().find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>');
+      eventBar.parents('tr').next().find('td').first().find('.event-bar-green').innerWidth(remainingWidth+'%');
+    }
+    // remainingWidth=remainingWidth-dayWidth;    
+    // eventBar.width(dayWidth+'%');
+    // if ( remainingWidth > 0 ){
+    //   eventBar.parents('tr').next().find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>');
+    //   eventBar.parents('tr').next().find('td').first().find('.event-bar-green').innerWidth(remainingWidth+'%');
+    // }
+    
+    // console.log($(this).parents('tr').next().find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>'));
+  }
+  function monday(){
+    // dayWidth=600;
+    dayWidth=700;
+    var remainingWidth=totalWidth-dayWidth;    
+    eventBar.width(dayWidth+'%');
+    if ( remainingWidth > 0 ){
+      eventBar.parents('tr').next().find('td').first().html('<span class="event-bar event-bar-green">Long Range</span>');
+      eventBar.parents('tr').next().find('td').first().find('.event-bar-green').innerWidth(remainingWidth+'%');
+    }
+  }
+  function tuesday(){
+    dayWidth=500;
+  }
+  function wednesday(){
+    dayWidth=400;
+  }
+  function thursday(){
+    dayWidth=300;
+  }
+  function friday(){
+    dayWidth=200;
+  }
+  function saturday(){
+    dayWidth=100;
+  }
     $(document).on('click', '.eventCalendar tr td', function() {
       $('#eventInfo tr td').remove();
       $(this).find('p').each(function() {
